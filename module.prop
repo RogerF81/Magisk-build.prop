@@ -1,0 +1,7 @@
+id=pmebuildprop
+name=build.prop additions for HTC 10
+version=v6
+versionCode=1
+author=RogerF81
+description=Adds some additional build.prop values.
+template=3
