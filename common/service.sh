@@ -20,14 +20,9 @@ resetprop -n ro.lge.proximity.delay 25
 resetprop -n mot.proximity.delay 0
 resetprop -n windowsmgr.max_events_per_sec 150
 resetprop -n ro.config.hw_fast_dormancy 1
+resetprop -n persist.sys.NV_FPSLIMIT 60
 resetprop -n persist.adb.notify 0
-resetprop -n htc.audio.alt.enable 0
-resetprop -n htc.audio.hac.enable 0
-resetprop -n htc.audio.enable_dmic 1
 resetprop -n persist.audio.handset.mic digital
-resetprop -n AUDIODRIVER alsa
-resetprop -n ro.sound.driver alsa
-resetprop -n alsa.mixer.playback.master DAC
 resetprop -n audio.deep_buffer.media false
 resetprop -n audio.offload.pcm.24bit.enable true
 resetprop -n audio.offload.multiple.enabled true
@@ -40,14 +35,9 @@ resetprop -n ro.lenovo.soundeffect dolby
 resetprop -n ro.mtk_dolby_dap_support 1
 resetprop -n persist.htc.audio.pcm.bitsize 24
 resetprop -n persist.htc.audio.pcm.channels 8
-resetprop -n htc.audio.global.state 1
-resetprop -n htc.audio.24bit.recording 1
-resetprop -n htc.audio.accessibility 1
-resetprop -n htc.audio.beats.support2v 1
-resetprop -n htc.audio.effectendpoint 8
-resetprop -n htc.audio.hw_standby 1
-resetprop -n htc.audio.q6.topology 0
-resetprop -n persist.sys.NV_FPSLIMIT 60
+resetprop -n htc.audio.alt.enable 0
+resetprop -n htc.audio.hac.enable 0
+resetprop -n htc.audio.enable_dmic 1
 sleep 1
 chmod 666 /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo 1 > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
