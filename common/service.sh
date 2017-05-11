@@ -23,6 +23,10 @@ resetprop -n ro.config.hw_fast_dormancy 1
 resetprop -n persist.sys.NV_FPSLIMIT 60
 resetprop -n persist.adb.notify 0
 resetprop -n persist.audio.handset.mic digital
+resetprop -n ro.qc.sdk.audio.fluencetype none
+resetprop -n persist.audio.fluence.voicerec true
+resetprop -n persist.audio.fluence.speaker false
+resetprop -n use.voice.path.for.pcm.voip true
 resetprop -n audio.deep_buffer.media false
 resetprop -n audio.offload.pcm.24bit.enable true
 resetprop -n audio.offload.multiple.enabled true
