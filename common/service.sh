@@ -6,6 +6,7 @@ MODDIR=${0%/*}
 # This script will be executed in late_start service mode
 # More info in the main Magisk thread
 sleep 30
+resetprop -n ro.sys.fw.bg_apps_limit 72
 resetprop -n ro.HOME_APP_ADJ 1
 resetprop -n logcat.live disable
 resetprop -n ro.ril.power_collapse 1
@@ -29,7 +30,6 @@ resetprop -n persist.audio.fluence.speaker false
 resetprop -n use.voice.path.for.pcm.voip true
 resetprop -n audio.deep_buffer.media false
 resetprop -n audio.offload.pcm.24bit.enable true
-resetprop -n audio.offload.multiple.enabled true
 resetprop -n use.voice.path.for.pcm.voip true
 resetprop -n tunnel.decode false
 resetprop -n tunnel.audiovideo.decode false
@@ -42,10 +42,7 @@ resetprop -n persist.htc.audio.pcm.channels 8
 resetprop -n htc.audio.alt.enable 0
 resetprop -n htc.audio.hac.enable 0
 resetprop -n htc.audio.enable_dmic 1
-resetprop -n ro.mtk_besloudness_support 0
-resetprop -n ro.mtk_bessurround_support 0
 resetprop -n tunnel.audio.encode false
-resetprop -n audio_hal.period_size 192
 resetprop -n audio.pp.asphere.enabled false
 resetprop -n audio.safx.pbe.enabled true
 resetprop -n persist.dev.pm.dyn_samplingrate 1
@@ -79,6 +76,37 @@ resetprop -n htc.audio.effectendpoint 8
 resetprop -n htc.audio.hdaudio.videoplayback 1
 resetprop -n htc.audio.hw_standby 1
 resetprop -n htc.audio.q6.topology 0
+resetprop -n ro.arkamys.enable true
+resetprop -n ro.arkamys.default.effect 11
+resetprop -n audio_hal.period_size 384
+resetprop -n ro.config.hw_dts_settings true
+resetprop -n DTS_EAGLE_PLATFORM_SUPPORT 1
+resetprop -n audio_capability hpx_support
+resetprop -n hw_extend_audioflinger 1
+resetprop -n mpq.audio.decode true
+resetprop -n pcm.channels 8
+resetprop -n persist.audio.hifi.int_codec true
+resetprop -n persist.audio.hifi true
+resetprop -n persist.audio.hifi.volume 1
+resetprop -n persist.audio.native.44.1kHz true
+resetprop -n persist.audio.native.48kHz true
+resetprop -n persist.audio.native.96kHz true
+resetprop -n persist.audio.native.192kHz true
+resetprop -n audio.offload.pcm.enable false
+resetprop -n audio.offload.buffer.size.kb 240
+resetprop -n audio.offload.disable 0
+resetprop -n audio.offload.pcm.16bit.enable true
+resetprop -n audio.offload.gapless.enabled false
+resetprop -n audio.offload.multiple.enabled false
+resetprop -n audio.offload.track.enable false
+resetprop -n persist.audio.hp true
+resetprop -n persist.audio.hifi_dac ON
+resetprop -n persist.audio.fluence.voicecall true
+resetprop -n persist.audio.lowlatency.rec true
+resetprop -n use.dts_eagle true
+resetprop -n hpx_send_params 1
+resetprop -n ro.config.hw_dts true
+resetprop -n ro.config.hpx_support true
 sleep 1
 chmod 666 /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo 1 > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
