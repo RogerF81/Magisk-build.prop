@@ -7,6 +7,7 @@ MODDIR=${0%/*}
 # More info in the main Magisk thread
 sleep 30
 resetprop -n ro.sys.fw.bg_apps_limit 72
+resetprop -n sys.display-size 2560x1440
 resetprop -n ro.HOME_APP_ADJ 1
 resetprop -n logcat.live disable
 resetprop -n ro.ril.power_collapse 1
