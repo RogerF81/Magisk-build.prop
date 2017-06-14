@@ -108,6 +108,11 @@ resetprop -n use.dts_eagle true
 resetprop -n hpx_send_params 1
 resetprop -n ro.config.hw_dts true
 resetprop -n ro.config.hpx_support true
+resetprop -n ro.dirac.max_active.powersound 3
+resetprop -n ro.dirac.max_active.headset 5
+resetprop -n ro.dirac.poolsize 6
+resetprop -n ro.dirac.config 2
+resetprop -n persist.audio.dirac.speaker true
 sleep 1
 chmod 666 /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
 echo 1 > /sys/module/snd_soc_wcd9330/parameters/high_perf_mode
