@@ -1,10 +1,8 @@
 ##########################################################################################
 #
-# Magisk
+# Magisk Module Template Config Script
 # by topjohnwu
 # 
-# This is a template zip for developers
-#
 ##########################################################################################
 ##########################################################################################
 # 
@@ -27,7 +25,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=pmebuildprop
+MODID=pmeprop
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -50,7 +48,7 @@ LATESTARTSERVICE=true
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk build.prop module"
+  ui_print "     Magisk build.prop module    "
   ui_print "*******************************"
 }
 
