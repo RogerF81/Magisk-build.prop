@@ -92,3 +92,4 @@ resetprop -n use.dts_eagle true
 resetprop -n hpx_send_params 1
 resetprop -n ro.config.hw_dts true
 resetprop -n ro.config.hpx_support true
+
