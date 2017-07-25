@@ -28,7 +28,7 @@ resetprop -n persist.telephony.support.ipv4 1
 resetprop -n ro.telephony.call_ring.delay 0
 resetprop -n ring.delay 0
 resetprop -n ro.lge.proximity.delay 25
-resetprop -n mot.proximity.delay 25
+resetprop -n mot.proximity.delay 0
 resetprop -n windowsmgr.max_events_per_sec 150
 resetprop -n ro.min_pointer_dur 8
 resetprop -n ro.max.fling_velocity 12000
