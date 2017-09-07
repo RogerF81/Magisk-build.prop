@@ -6,8 +6,8 @@ MODDIR=${0%/*}
 # This script will be executed in late_start service mode
 # More info in the main Magisk thread
 sleep 30
-#resetprop -n ro.arkamys.enable true
-#resetprop -n ro.arkamys.default.effect 11
+resetprop -n ro.arkamys.enable true
+resetprop -n ro.arkamys.default.effect 11
 #resetprop -n ro.dirac.max_active.powersound 3
 #resetprop -n ro.dirac.max_active.headset 5
 #resetprop -n ro.dirac.poolsize 6
