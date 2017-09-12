@@ -1,6 +1,6 @@
 id=pmeprop
 name=build.prop additions
-version=v15
+version=v16
 versionCode=1
 author=RogerF81
 description=Adds some additional build.prop values.
