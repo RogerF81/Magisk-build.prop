@@ -1,20 +1,10 @@
 # This file will be read by resetprop
 # Example: Change dpi
 # ro.sf.lcd_density=320
-##Only if Arkamys is used
-#ro.arkamys.enable=true
-#ro.arkamys.default.effect=11
 ##Universal build.prop additions, collected and cherry-picked all over xda
 #Experimental
 ro.sys.fw.bg_apps_limit=74
 ##
-ro.ril.power_collapse=1
-pm.sleep_mode=1
-ro.dirac.max_active.powersound=3
-ro.dirac.max_active.headset=5
-ro.dirac.poolsize=6
-ro.dirac.config=2
-persist.audio.dirac.speaker=true
 ro.HOME_APP_ADJ=1
 logcat.live=disable
 profiler.force_disable_err_rpt=1
@@ -66,49 +56,3 @@ persist.audio.fluence.speaker=false
 use.voice.path.for.pcm.voip=true
 #ro.qualcomm.cabl=1
 ##End universal
-##Ainur Sauron build.prop additions by @UltraM8
-af.resampler.quality=7
-persist.af.resampler.quality=7
-tunnel.audio.encode=false
-audio_hal.period_size=192
-audio.pp.asphere.enabled=false
-audio.safx.pbe.enabled=true
-audio.deep_buffer.media=false
-persist.dev.pm.dyn_samplingrate=1
-lpa.decode=false
-lpa.use-stagefright=false
-lpa.releaselock=false
-alsa.mixer.playback.master=DAC1
-audio.dolby.ds2.enabled=false
-audio.dolby.ds2.hardbypass=false
-af.fast_track_multiplier=1
-persist.audio.native.44.1kHz=true
-persist.audio.native.48kHz=true
-persist.audio.native.96kHz=true
-persist.audio.native.192kHz=true
-persist.audio.hifi.int_codec=true
-persist.audio.hifi.volume=1
-persist.audio.format.24bit=true
-audio.offload.pcm.enable=true
-audio.offload.buffer.size.kb=240
-audio.offload.pcm.24bit.enable=true
-audio.offload.pcm.16bit.enable=true
-persist.audio.hp=true
-persist.audio.lowlatency.rec=true
-audio.playback.mch.downsample=false
-audio.high.resolution.enable=true
-use.dts_eagle=true
-hpx_send_params=1
-#Ultram8's=hex=props
-audio.native.dsd.buffer.size.kb=320
-audio.nat.codec.enabled=1
-fastrpc.perf.adsp=1
-audio_hw_if=1
-af.thread.throttle=0
-ro.audio.max_fast_tracks=24
-audio.hwacceffects.needed=true
-eagle_dsec_islicensevalid=1
-DTS_EAGLE_PLATFORM_SUPPORT=true
-DTS_NEW_PARAM_READY=1
-EagleLicense=1
-HD_stream_only=1
