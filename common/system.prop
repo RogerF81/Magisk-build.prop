@@ -65,8 +65,8 @@ persist.audio.fluence.voicerec=true
 persist.audio.fluence.speaker=false
 use.voice.path.for.pcm.voip=true
 #ro.qualcomm.cabl=1
-##End universal
-##Ainur Sauron build.prop additions by @UltraM8
+##End=universal
+##Ainur=Sauron=build.prop=additions=by=@UltraM8
 af.resampler.quality=7
 persist.af.resampler.quality=7
 tunnel.audio.encode=false
@@ -74,11 +74,13 @@ audio_hal.period_size=192
 audio.pp.asphere.enabled=false
 audio.safx.pbe.enabled=true
 audio.deep_buffer.media=false
+ro.ril.enable.amr.wideband=1
 persist.dev.pm.dyn_samplingrate=1
 lpa.decode=false
 lpa.use-stagefright=false
 lpa.releaselock=false
 alsa.mixer.playback.master=DAC1
+ro.lenovo.hifi_support=true
 audio.dolby.ds2.enabled=false
 audio.dolby.ds2.hardbypass=false
 af.fast_track_multiplier=1
@@ -96,10 +98,12 @@ audio.offload.pcm.16bit.enable=true
 persist.audio.hp=true
 persist.audio.lowlatency.rec=true
 audio.playback.mch.downsample=false
+ro.qc.sdk.audio.fluencetype=nxp
 audio.high.resolution.enable=true
 use.dts_eagle=true
+vendor.audio.use.dts_eagle=true
 hpx_send_params=1
-#Ultram8's=hex=props
+#Ultram8's hex props
 audio.native.dsd.buffer.size.kb=320
 audio.nat.codec.enabled=1
 fastrpc.perf.adsp=1
