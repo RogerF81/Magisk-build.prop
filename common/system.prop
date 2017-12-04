@@ -8,13 +8,6 @@
 #Experimental
 ro.sys.fw.bg_apps_limit=74
 ##
-ro.ril.power_collapse=1
-pm.sleep_mode=1
-ro.dirac.max_active.powersound=3
-ro.dirac.max_active.headset=5
-ro.dirac.poolsize=6
-ro.dirac.config=2
-persist.audio.dirac.speaker=true
 ro.HOME_APP_ADJ=1
 logcat.live=disable
 profiler.force_disable_err_rpt=1
