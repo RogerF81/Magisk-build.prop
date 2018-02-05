@@ -4,4 +4,4 @@ version=v30
 versionCode=1
 author=RogerF81
 description=Adds some additional build.prop values.
-template=1400
+minMagisk=1500
