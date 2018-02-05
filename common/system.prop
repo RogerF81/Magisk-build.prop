@@ -1,7 +1,7 @@
 # This file will be read by resetprop
 # Example: Change dpi
 # ro.sf.lcd_density=320
-##Only if Arkamys is used
+##Only if Arkamys is used##
 #ro.arkamys.enable=true
 #ro.arkamys.default.effect=11
 ##

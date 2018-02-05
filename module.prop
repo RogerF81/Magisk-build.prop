@@ -3,5 +3,5 @@ name=build.prop additions
 version=v30
 versionCode=1
 author=RogerF81
-description=Adds some additional build.prop values.
+description=Adds some additional build.prop values to any device.
 minMagisk=1500
