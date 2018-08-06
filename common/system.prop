@@ -8,18 +8,15 @@
 #ro.qualcomm.cabl=1
 ##Universal build.prop additions, collected and cherry-picked all over xda
 #Experimental
-ro.sys.fw.bg_apps_limit=52
-##Dirac setup, done by OP. Has to be checked further on Oreo
-#ro.dirac.max_active.powersound=3
-#ro.dirac.max_active.headset=5
-#ro.dirac.poolsize=6
-#ro.dirac.config=2
-#persist.audio.dirac.speaker=true
+ro.sys.fw.bg_apps_limit=72
+ro.vendor.qti.sys.fw.bg_apps_limit=72
 af.resampler.quality=4
 persist.af.resampler.quality=4
 ##
 ro.HOME_APP_ADJ=1
 ##
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
 logcat.live=disable
 profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
@@ -29,11 +26,14 @@ profiler.debugmonitor=false
 profiler.launch=false
 profiler.hung.dumpdobugreport=false
 ##
+#ro.ril.power_collapse=1
+#pm.sleep_mode=1
+##
 ro.config.nocheckin=1
 debugtool.anrhistory=0
 ro.com.google.locationfeatures=0
 ro.com.google.networklocation=0
-ro.ril.enable.amr.wideband=1
+#ro.ril.enable.amr.wideband=1
 ##
 wifi.supplicant_scan_interval=300
 persist.telephony.support.ipv6=0
@@ -41,31 +41,49 @@ persist.telephony.support.ipv4=1
 ##
 ro.telephony.call_ring.delay=0
 ring.delay=0
+ro.config.vc_call_steps=20
+ro.lge.proximity.delay=15
+mot.proximity.delay=15
+## XXX Tweaks ##
+ro.ril.hep=0
+ro.ril.hsxpa=2
+ro.ril.gprsclass=12
+ro.ril.enable.dtm=1
+ro.ril.hsdpa.category=8
+ro.ril.enable.a53=1
+ro.ril.enable.3g.prefix=1
+ro.ril.htcmaskw1.bitmask=4294967295
+ro.ril.hsupa.category=6
+ro.ril.enable.a52=1
+ro.ril.set.mtu1472=1
+persist.cust.tel.eons=1
+net.tethering.noprovisioning=true
+sys.config.spcm_enable=false
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+persist.sys.purgeable_assets=1
 ##
 #ro.lge.proximity.delay=25
 #mot.proximity.delay=0
-windowsmgr.max_events_per_sec=120
+windowsmgr.max_events_per_sec=300
 ro.min_pointer_dur=8
-ro.max.fling_velocity=12000
+ro.max.fling_velocity=15000
 ro.min.fling_velocity=8000
-persist.cust.tel.eons=1
 persist.radio.add_power_save=1
 persist.sys.NV_FPSLIMIT=60
+persist.camera.HAL1.enabled=0
+persist.camera.HAL3.enabled=1
 persist.adb.notify=0
-windowsmgr.support_rotation_90=true
-windowsmgr.support_rotation_180=false
-windowsmgr.support_rotation_270=true
-persist.audio.handset.mic=digital
+#persist.cust.tel.eons=1
+#windowsmgr.support_rotation_90=true
+#windowsmgr.support_rotation_180=false
+#windowsmgr.support_rotation_270=true
+#persist.sys.use_dithering=1
 ##Only HTC related?
 #htc.audio.alt.enable=0
 #htc.audio.hac.enable=0
 #htc.audio.enable_dmic=1
-persist.camera.HAL3.enabled=1
-##Android Mic Fix mod merged
-ro.qc.sdk.audio.fluencetype=none
-persist.audio.fluence.voicerec=true
-persist.audio.fluence.speaker=false
-use.voice.path.for.pcm.voip=true
+#persist.audio.handset.mic=digital
 ##VoLTE and VoIP mod merged
 persist.dbg.ims_volte_enable=1 
 persist.dbg.volte_avail_ovr=1 
@@ -75,25 +93,10 @@ persist.radio.rat_on=combine
 persist.radio.data_ltd_sys_ind=1
 persist.radio.data_con_rprt=1
 persist.radio.calls.on.ims=1
-##Experimental; taken off LXT mod
-debug.sf.enable_hwc_vds=1
-debug.sf.hw=1
-debug.sf.latch_unsignaled=1
-debug.egl.hw=1
-debug.gralloc.enable_fb_ubwc=1
-dev.pm.dyn_samplingrate=1
-sdm.perf_hint_window=50
-persist.hwc.enable_vds=1
-ro.debuggable=0
-power.saving.mode=1
-ro.config.hw_power_saving=1
-ro.config.hw_power_saving=true
-persist.radio.add_power_save=1
-ro.fast.dormancy=0
-ro.ril.fast.dormancy.rule=0
-ro.config.hw_fast_dormancy=0
-pm.sleep_mode=1
-persist.sys.purgeable_assets=1
-persist.service.pcsync.enable=0
-persist.service.lgospd.enable=0
-
+##From BP Tweaks HUB MOD##
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152

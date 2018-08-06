@@ -1,6 +1,6 @@
 id=burgerprop
 name=build.prop additions
-version=v30
+version=v38
 versionCode=1
 author=RogerF81
 description=Adds some additional build.prop values to any device.
