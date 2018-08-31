@@ -33,17 +33,8 @@ ro.config.nocheckin=1
 debugtool.anrhistory=0
 ro.com.google.locationfeatures=0
 ro.com.google.networklocation=0
-#ro.ril.enable.amr.wideband=1
-##
-wifi.supplicant_scan_interval=300
-persist.telephony.support.ipv6=0
-persist.telephony.support.ipv4=1
-##
-ro.telephony.call_ring.delay=0
-ring.delay=0
-ro.config.vc_call_steps=20
-ro.lge.proximity.delay=15
-mot.proximity.delay=15
+ro.ril.enable.amr.wideband=1
+wifi.supplicant_scan_interval=120
 ## XXX Tweaks ##
 ro.ril.hep=0
 ro.ril.hsxpa=2
@@ -63,6 +54,12 @@ persist.service.pcsync.enable=0
 persist.service.lgospd.enable=0
 persist.sys.purgeable_assets=1
 ##
+ro.telephony.call_ring.delay=0
+ring.delay=0
+ro.config.vc_call_steps=20
+ro.lge.proximity.delay=15
+mot.proximity.delay=15
+##
 #ro.lge.proximity.delay=25
 #mot.proximity.delay=0
 windowsmgr.max_events_per_sec=300
@@ -71,7 +68,7 @@ ro.max.fling_velocity=15000
 ro.min.fling_velocity=8000
 persist.radio.add_power_save=1
 persist.sys.NV_FPSLIMIT=60
-persist.camera.HAL1.enabled=0
+#persist.camera.HAL1.enabled=0
 persist.camera.HAL3.enabled=1
 persist.adb.notify=0
 #persist.cust.tel.eons=1
