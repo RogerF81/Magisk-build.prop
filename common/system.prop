@@ -35,24 +35,6 @@ ro.com.google.locationfeatures=0
 ro.com.google.networklocation=0
 ro.ril.enable.amr.wideband=1
 wifi.supplicant_scan_interval=120
-## XXX Tweaks ##
-ro.ril.hep=0
-ro.ril.hsxpa=2
-ro.ril.gprsclass=12
-ro.ril.enable.dtm=1
-ro.ril.hsdpa.category=8
-ro.ril.enable.a53=1
-ro.ril.enable.3g.prefix=1
-ro.ril.htcmaskw1.bitmask=4294967295
-ro.ril.hsupa.category=6
-ro.ril.enable.a52=1
-ro.ril.set.mtu1472=1
-persist.cust.tel.eons=1
-net.tethering.noprovisioning=true
-sys.config.spcm_enable=false
-persist.service.pcsync.enable=0
-persist.service.lgospd.enable=0
-persist.sys.purgeable_assets=1
 ##
 ro.telephony.call_ring.delay=0
 ring.delay=0
