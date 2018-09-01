@@ -4,4 +4,4 @@ version=v41
 versionCode=1
 author=RogerF81
 description=Adds some additional build.prop values to any device.
-minMagisk=1500
+minMagisk=17000
