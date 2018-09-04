@@ -1,20 +1,15 @@
 # This file will be read by resetprop
 # Example: Change dpi
 # ro.sf.lcd_density=320
-##Only if Arkamys is used##
-#ro.arkamys.enable=true
-#ro.arkamys.default.effect=11
-##
-#ro.qualcomm.cabl=1
+ro.qualcomm.cabl=2
 ##Universal build.prop additions, collected and cherry-picked all over xda
-#Experimental
+sdm.perf_hint_window=50
 ro.sys.fw.bg_apps_limit=72
 ro.vendor.qti.sys.fw.bg_apps_limit=72
 af.resampler.quality=4
 persist.af.resampler.quality=4
 ##
 ro.HOME_APP_ADJ=1
-##
 ro.kernel.android.checkjni=0
 ro.kernel.checkjni=0
 logcat.live=disable
@@ -25,9 +20,15 @@ profiler.force_disable_ulog=true
 profiler.debugmonitor=false
 profiler.launch=false
 profiler.hung.dumpdobugreport=false
-##
-#ro.ril.power_collapse=1
-#pm.sleep_mode=1
+#Radio
+ro.ril.power_collapse=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.gprsclass=12
+ro.ril.hsxpa=2
+ro.ril.hsdpa.category=20
+ro.ril.hsupa.category=6
+ro.ril.enable.3g.prefix=1
 ##
 ro.config.nocheckin=1
 debugtool.anrhistory=0
@@ -41,28 +42,30 @@ ring.delay=0
 ro.config.vc_call_steps=20
 ro.lge.proximity.delay=15
 mot.proximity.delay=15
+persist.sys.purgeable_assets=1
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
 ##
 #ro.lge.proximity.delay=25
 #mot.proximity.delay=0
-windowsmgr.max_events_per_sec=300
+windowsmgr.max_events_per_sec=120
 ro.min_pointer_dur=8
 ro.max.fling_velocity=15000
 ro.min.fling_velocity=8000
 persist.radio.add_power_save=1
-persist.sys.NV_FPSLIMIT=60
 #persist.camera.HAL1.enabled=0
 persist.camera.HAL3.enabled=1
 persist.adb.notify=0
-#persist.cust.tel.eons=1
-#windowsmgr.support_rotation_90=true
-#windowsmgr.support_rotation_180=false
-#windowsmgr.support_rotation_270=true
+persist.cust.tel.eons=1
 #persist.sys.use_dithering=1
+#persist.sys.NV_FPSLIMIT=60
 ##Only HTC related?
 #htc.audio.alt.enable=0
 #htc.audio.hac.enable=0
 #htc.audio.enable_dmic=1
 #persist.audio.handset.mic=digital
+ro.telephony.default_network=10
+ro.ril.def.preffered.network=10
 ##VoLTE and VoIP mod merged
 persist.dbg.ims_volte_enable=1 
 persist.dbg.volte_avail_ovr=1 
@@ -75,7 +78,29 @@ persist.radio.calls.on.ims=1
 ##From BP Tweaks HUB MOD##
 net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
 net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
-net.tcp.buffersize.lte=524288,1048576,2097152,5242 88,1048576,2097152
+net.tcp.buffersize.hspa=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hspda=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.hsdpa=6144,87380,1048576,6144,87380,1048576
+net.tcp.buffersize.hspap=6144,87380,524288,6144,16384,262144
+net.tcp.buffersize.hsupa=46144,87380,524288,6144,16384,262144
+net.tcp.buffersize.evdo=4096,87380,563200,4096,16384,262144
+net.tcp.buffersize.evdo_b=6144,87380,1048576,6144,87380,1048576
+net.tcp.buffersize.lte=524288,1048576,2097152,524288,1048576,2097152
+#TCP
+net.core.rmem_max=8388608
+net.core.wmem_max=8388608
+net.core.rmem_default=65536
+net.core.wmem_default=65536
+net.ipv4.tcp_rmem='4096 87380 8388608'
+net.ipv4.tcp_wmem='4096 65536 8388608'
+net.ipv4.tcp_mem='8388608 8388608 8388608'
+net.ipv4.route.flush=1
+#Audio
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+audio.offload.pcm.32bit.enable=true
+audio.offload.track.enable=true
+audio.offload.multiaac.enable=true
